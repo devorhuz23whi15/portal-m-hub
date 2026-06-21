@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 用途导向的轻介绍</title>
+  <style>
+    /* reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fcfcfc;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      color: #1e2a3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 720px;
+      width: 92%;
+      margin: 0 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    /* hero — 开场短句 */
+    .hero {
+      margin-bottom: 3.2rem;
+      border-bottom: 1px solid #e6edf4;
+      padding-bottom: 2.2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #0a1c2f;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #3d5068;
+      max-width: 580px;
+    }
+
+    /* 承接段落 */
+    .intro {
+      margin-bottom: 2.8rem;
+    }
+
+    .intro p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .intro a {
+      color: #1f5b8c;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1.2px;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+
+    .intro a:hover {
+      color: #0a3b5f;
+    }
+
+    /* 特点列表 — 卡片化，极简 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem 2rem;
+      margin-bottom: 3.2rem;
+    }
+
+    @media (max-width: 520px) {
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+      }
+    }
+
+    .feature-item {
+      background: white;
+      padding: 1.5rem 1.6rem 1.6rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.03);
+      border: 1px solid #edf2f8;
+      transition: box-shadow 0.2s;
+    }
+
+    .feature-item:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .feature-item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0f2a41;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-item p {
+      font-size: 0.92rem;
+      color: #38506a;
+      line-height: 1.6;
+    }
+
+    /* 温和结尾 — 包含 FAQ 摘要风格 */
+    .closure {
+      background: #f4f8fd;
+      border-radius: 16px;
+      padding: 2.2rem 2rem 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .closure h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #0d2a41;
+      margin-bottom: 1.2rem;
+    }
+
+    .closure .faq-item {
+      margin-bottom: 1.1rem;
+    }
+
+    .closure .faq-item strong {
+      display: block;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1d3d5a;
+      margin-bottom: 0.2rem;
+    }
+
+    .closure .faq-item p {
+      font-size: 0.9rem;
+      color: #38506a;
+      margin: 0;
+    }
+
+    .closure .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .closure a {
+      color: #1f5b8c;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 500;
+    }
+
+    .closure a:hover {
+      color: #0a3b5f;
+    }
+
+    /* 脚注 */
+    .footer-note {
+      margin-top: 3rem;
+      font-size: 0.82rem;
+      color: #7a8ca0;
+      text-align: center;
+      border-top: 1px solid #e5ecf3;
+      padding-top: 1.8rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #e2eaf2;
+      margin: 1.8rem 0;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <!-- hero 开场短句 -->
+  <div class="hero">
+    <h1>一个名字，一种期待</h1>
+    <p>不论你是偶然路过还是特意搜索，先花半分钟弄清这个站点的核心用途。</p>
+  </div>
+
+  <!-- 承接段落，自然嵌入链接 -->
+  <div class="intro">
+    <p>当你看到 <a href="https://portal-m-i-game.com.cn">爱游戏</a> 这个名称时，很可能第一反应是：它到底提供什么？是游戏资讯、社区、工具，还是某种轻量入口？实际上，它的定位偏向于聚合与引导，用简洁的界面把用户带到真正需要的内容区域。你不需要先注册或下载，整个结构围绕“识别用途 → 快速跳转”设计。</p>
+    <p>如果你习惯在多个游戏相关服务之间切换，可能会注意到不少平台的信息密度过高。而这里刻意保持克制，把选择权交还给使用者。从这点来看，<a href="https://portal-m-i-game.com.cn">爱游戏</a> 更像一个安静的起点，而不是终点。</p>
+  </div>
+
+  <!-- 特点列表 -->
+  <div class="feature-grid">
+    <div class="feature-item">
+      <h3>分类明确</h3>
+      <p>按场景和功能分组，避免信息堆砌。你可以很快定位到对应模块，不用在菜单里反复翻找。</p>
+    </div>
+    <div class="feature-item">
+      <h3>低干扰浏览</h3>
+      <p>没有弹窗、自动播放或强制推送。页面节奏由你控制，适合想安静查阅的用户。</p>
+    </div>
+    <div class="feature-item">
+      <h3>轻量结构</h3>
+      <p>前端保持精简，加载速度有基本保障。对于临时查询或移动端访问，体验相对顺畅。</p>
+    </div>
+    <div class="feature-item">
+      <h3>中立引导</h3>
+      <p>链接和入口以信息提示为主，不夸大、不诱导。你可以自行判断是否需要深入。</p>
+    </div>
+  </div>
+
+  <!-- 温和结尾 + FAQ 摘要 -->
+  <div class="closure">
+    <h2>常见疑问 · 摘要</h2>
+    <div class="faq-item">
+      <strong>这个网站适合谁？</strong>
+      <p>希望快速了解游戏相关工具或服务入口的人。不适合追求深度攻略或社区讨论的玩家。</p>
+    </div>
+    <div class="faq-item">
+      <strong>需要登录吗？</strong>
+      <p>大部分区域无需身份验证即可浏览。部分内部功能可能要求账号，以实际页面提示为准。</p>
+    </div>
+    <div class="faq-item">
+      <strong>与 <a href="https://portal-m-i-game.com.cn">爱游戏</a> 是什么关系？</strong>
+      <p>它就是本站的唯一名称，也是你正在评估的站点。上面所有介绍均围绕这个地址展开。</p>
+    </div>
+  </div>
+
+  <!-- 温和收尾句，非链接 -->
+  <div class="footer-note">
+    信息页面 · 内容基于公开结构和一般使用观察整理
+  </div>
+</div>
+</body>
+</html>
