@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K1体育 · 产品说明索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f4f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.65;
+      color: #2c2e30;
+      padding: 2rem 1.25rem;
+    }
+
+    .page-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    /* 标题区 / hero */
+    .hero {
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #1e2022;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #4f5358;
+      max-width: 720px;
+      border-left: 4px solid #b0b8c0;
+      padding-left: 1.25rem;
+    }
+
+    /* 卡片网格 */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e3e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.04);
+      padding: 1.75rem 1.5rem;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #1e2022;
+      border-bottom: 1px dashed #d8dde3;
+      padding-bottom: 0.5rem;
+    }
+
+    .card p, .card li {
+      font-size: 0.98rem;
+      color: #3b3f44;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card ul li {
+      position: relative;
+      padding-left: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0.25rem;
+      color: #8e959e;
+      font-weight: 700;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef0f2;
+      color: #3a3f45;
+      font-size: 0.8rem;
+      font-weight: 450;
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+      border: 1px solid #dce1e6;
+    }
+
+    .scene-box {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e3e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .scene-box h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      color: #1e2022;
+    }
+
+    .scene-box p {
+      color: #3b3f44;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #e7e9ec;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      color: #1e2022;
+    }
+
+    .faq-item p {
+      margin-left: 0.2rem;
+      color: #4b4f54;
+    }
+
+    .footnote {
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #dde1e6;
+      font-size: 0.9rem;
+      color: #5b6066;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.8rem;
+    }
+
+    .footnote a {
+      color: #2c5f8a;
+      text-decoration: none;
+      border-bottom: 1px dotted #b2c4d6;
+    }
+
+    .footnote a:hover {
+      border-bottom: 1px solid #2c5f8a;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1.2rem 0.9rem;
+      }
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+      .card, .scene-box {
+        padding: 1.4rem 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>K1体育 · 信息索引与产品说明</h1>
+    <p>从资料整理视角切入，梳理平台结构、功能倾向与实用建议，不渲染、不堆砌，仅作客观说明。</p>
+  </div>
+
+  <!-- 卡片区：摘要 + 亮点 + 建议 -->
+  <div class="grid">
+    <div class="card">
+      <h2>摘要</h2>
+      <p><a href="https://home-k1sports.com" style="color:inherit; text-decoration:none; border-bottom:1px dotted #9aa5b0;">K1体育</a> 是一个以体育内容聚合与数据索引为基础的在线平台。其结构围绕赛事资料、项目分类与信息整理展开，适合有明确查阅需求的用户使用。页面布局偏向工具化，重视信息密度与导航效率。</p>
+      <p style="margin-top:0.8rem;">从索引角度看，平台将不同运动项目按层级组织，并提供基础数据浏览能力。整体风格简洁，没有冗余修饰。</p>
+    </div>
+
+    <div class="card">
+      <h2>功能亮点</h2>
+      <ul>
+        <li>赛事资料按运动项目分类归档，层级清晰</li>
+        <li>信息页面响应速度较快，结构稳定</li>
+        <li>内容板块采用卡片与列表混合布局，便于扫读</li>
+        <li>不依赖强互动或推送，保持低干扰浏览</li>
+        <li>移动端适配良好，核心导航无截断</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>使用建议</h2>
+      <ul>
+        <li>适合作为运动资料整理入口，而非即时资讯流</li>
+        <li>建议使用桌面浏览器查阅多项目对比场景</li>
+        <li>移动端可以充分利用分类菜单缩小范围</li>
+        <li>关注页面结构而非视觉装饰，效率优先</li>
+        <li>如需要特定赛事数据，建议先定位项目大类</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 场景区块（两列式，非对称） -->
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
+    <div class="scene-box" style="flex: 2; min-width: 260px;">
+      <h3>适用场景示例</h3>
+      <p><span class="tag">资料检索</span><span class="tag">赛事归档</span><span class="tag">运动分类</span><span class="tag">数据对照</span></p>
+      <p style="margin-top: 0.8rem;">日常查阅联赛日程、对比不同项目的基础数据、梳理某一运动的赛季节点——这些场景下，<a href="https://home-k1sports.com" style="color:#2c5f8a; text-decoration:none; border-bottom:1px solid #b8c8db;">K1体育</a> 的结构化索引可以提供比较直接的支持。不适合将其视为实时比分或社交讨论平台，其定位更接近资料档案夹。</p>
+    </div>
+    <div class="scene-box" style="flex: 1.2; min-width: 200px;">
+      <h3>信息组织方式</h3>
+      <p>采用“运动大类 → 细分项目 → 基本数据”的递进结构，每层均配有简短说明。页面之间链接关系明确，返回路径清晰，便于持续浏览。整体信息噪音较低。</p>
+    </div>
+  </div>
+
+  <!-- FAQ 摘要（非完整问答，仅选取两条） -->
+  <div class="scene-box">
+    <h3>FAQ 摘要（常见疑问方向）</h3>
+    <div class="faq-item">
+      <strong>平台是否会实时更新比分？</strong>
+      <p>当前版本倾向于提供基础框架与资料索引，实时性并非首要设计目标。建议以资料整理视角使用。</p>
+    </div>
+    <div class="faq-item">
+      <strong>适合哪些类型的用户？</strong>
+      <p>对运动项目有查阅需求、希望快速定位分类资料的用户，以及需要结构化信息索引的研究型观众。</p>
+    </div>
+    <div style="margin-top: 0.6rem; text-align: right; font-size: 0.88rem; color: #6b717a;">
+      * 以上基于公开界面整理，具体以实际页面为准。
+    </div>
+  </div>
+
+  <!-- 页脚：可信但克制的访问说明 -->
+  <div class="footnote">
+    <span>本页为产品说明式索引，内容基于公开资料整理，仅供参考与信息理解之用。</span>
+    <span><a href="https://home-k1sports.com">K1体育</a> · 资料说明页</span>
+  </div>
+
+</div>
+</body>
+</html>
