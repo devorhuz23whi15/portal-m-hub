@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常索引 · K1体育 阅读与参照</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #fde9d6 0%, #f8dcc8 35%, #f1cca9 70%, #ebbd9b 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1.5rem;
+        }
+        .card {
+            max-width: 880px;
+            width: 100%;
+            background: rgba(255, 248, 240, 0.92);
+            backdrop-filter: blur(4px);
+            border-radius: 48px 24px 48px 24px;
+            box-shadow: 0 24px 48px -12px rgba(140, 80, 40, 0.25), 0 8px 16px -6px rgba(80, 40, 15, 0.1);
+            padding: 2.8rem 2.5rem;
+            transition: all 0.15s ease;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 2rem 1.2rem;
+                border-radius: 32px 16px 32px 16px;
+            }
+            body {
+                padding: 1rem 0.8rem;
+            }
+        }
+        .hero-sentence {
+            font-size: 1.9rem;
+            font-weight: 350;
+            line-height: 1.4;
+            letter-spacing: 2px;
+            color: #5e3a27;
+            border-left: 6px solid #c28a6b;
+            padding-left: 1.2rem;
+            margin-bottom: 1.6rem;
+            text-shadow: 1px 1px 0 rgba(255, 235, 215, 0.6);
+        }
+        .hero-sentence span {
+            background: linear-gradient(to right, #b0724a, #8c5c3b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 450;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #754d33;
+            background: rgba(244, 216, 188, 0.3);
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            border-radius: 60px;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+            backdrop-filter: blur(2px);
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #3f2b1c;
+            margin-bottom: 2.2rem;
+            text-align: left;
+        }
+        .intro-text a {
+            color: #8b5b3a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #e1b99b;
+            padding: 0 2px;
+            transition: border-color 0.2s, color 0.2s;
+            border-radius: 4px;
+        }
+        .intro-text a:hover {
+            color: #532f1a;
+            border-bottom-color: #a16e4a;
+            background: rgba(215, 172, 140, 0.15);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem 1.8rem;
+            margin: 2rem 0 2.4rem;
+        }
+        .feature-item {
+            background: rgba(255, 241, 228, 0.7);
+            backdrop-filter: blur(2px);
+            padding: 1.2rem 1rem 1rem 1.4rem;
+            border-radius: 28px 10px 28px 10px;
+            border: 1px solid #eddacb;
+            box-shadow: 0 4px 8px rgba(160, 100, 60, 0.08);
+        }
+        .feature-item span {
+            font-size: 1.7rem;
+            display: block;
+            margin-bottom: 0.2rem;
+            opacity: 0.7;
+        }
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 550;
+            color: #4e3322;
+            margin: 0.2rem 0 0.3rem;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #5e4230;
+        }
+        .scene-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.2rem;
+            background: #fcf1e6;
+            padding: 1.6rem 1.8rem;
+            border-radius: 30px 10px 30px 10px;
+            margin: 2.2rem 0 1.8rem;
+            border: 1px solid #e7cfbb;
+        }
+        .scene-block h4 {
+            width: 100%;
+            font-size: 1.1rem;
+            font-weight: 450;
+            color: #633f29;
+            margin-bottom: 0.2rem;
+            letter-spacing: 1px;
+        }
+        .scene-tag {
+            background: #dfc0aa;
+            padding: 0.3rem 1.1rem;
+            border-radius: 50px;
+            color: #342015;
+            font-size: 0.95rem;
+            font-weight: 400;
+            box-shadow: inset 0 1px 3px rgba(255, 235, 215, 0.6);
+            border: 1px solid #d3b095;
+        }
+        .faq-mini {
+            background: rgba(237, 214, 190, 0.2);
+            border-radius: 28px 8px 28px 8px;
+            padding: 1.2rem 1.6rem;
+            margin-top: 1.4rem;
+            border-left: 4px solid #c99777;
+        }
+        .faq-mini p {
+            font-size: 0.98rem;
+            color: #402f1f;
+            line-height: 1.6;
+        }
+        .faq-mini strong {
+            color: #5a3823;
+            font-weight: 600;
+        }
+        .closing-note {
+            margin-top: 2.2rem;
+            padding-top: 1.2rem;
+            border-top: 2px dashed #dbbca4;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #3f2c1e;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        .closing-note a {
+            color: #7a5339;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid #c9a385;
+            transition: background 0.15s;
+            padding: 0 3px;
+        }
+        .closing-note a:hover {
+            background: #ddc2ae;
+            border-bottom-color: #8f6042;
+            color: #371f11;
+        }
+        .muted-ref {
+            font-size: 0.85rem;
+            color: #a6836b;
+            text-align: right;
+            margin-top: 1.6rem;
+            opacity: 0.5;
+            letter-spacing: 0.6px;
+        }
+        .emph-light {
+            font-weight: 400;
+            background: linear-gradient(to right, #b98b70, #9d6e51);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 开场短句 -->
+        <div class="hero-sentence">
+            <span>信息流动</span> · 从一次查询开始，慢慢延伸。
+        </div>
+        <div class="tagline">日常对照 · 轻阅读 · 内容索引</div>
+
+        <!-- 承接段落 —— 从日常查询、对照、延伸阅读切入 -->
+        <div class="intro-text">
+            <p>有时候打开一个页面并非寻找某个确切答案，而是一种习惯性的信息参照：看一段记录、对比一组描述、顺着一条线索往下走。  
+            <a href="https://cn-zh-k1sports.com">K1体育</a> 就在这样使用场景里提供一种持续可翻看的材料——不是快速结论，而是可供停留的文字与条目。</p>
+            <p style="margin-top: 0.8rem;">从运动规则到赛事文化，从术语对照到背景梳理，页面内容更接近一本翻开的笔记本，适合在阅读间隙慢慢划过，也适合随手摘几句。</p>
+        </div>
+
+        <!-- 特点列表 —— 干净、温和、非推销感 -->
+        <div class="features-grid">
+            <div class="feature-item">
+                <span>📋</span>
+                <h3>条目化叙述</h3>
+                <p>每段独立成篇，适合跳读与对照，不必从头读到尾。</p>
+            </div>
+            <div class="feature-item">
+                <span>🔍</span>
+                <h3>术语与背景</h3>
+                <p>常见概念旁边配有简短解释，节省二次搜索时间。</p>
+            </div>
+            <div class="feature-item">
+                <span>📎</span>
+                <h3>延伸参考</h3>
+                <p>内容间留有隐性的索引关系，像书页边缘的注释。</p>
+            </div>
+            <div class="feature-item">
+                <span>🧷</span>
+                <h3>稳定版式</h3>
+                <p>干净背景、适中行距，减少视线跳跃，适合缓慢阅读。</p>
+            </div>
+        </div>
+
+        <!-- 场景段落 —— 温和的场景描述，不推荐不催促 -->
+        <div class="scene-block">
+            <h4>📘 翻阅场景</h4>
+            <span class="scene-tag">等待间隙 · 三五行</span>
+            <span class="scene-tag">对照规则 · 短语查找</span>
+            <span class="scene-tag">延伸阅读 · 关键词发散</span>
+            <span class="scene-tag">静默浏览 · 无推送干扰</span>
+            <span class="scene-tag">内容摘录 · 笔记参考</span>
+        </div>
+
+        <!-- FAQ 摘要 —— 呈现为简短问答风格，语气克制 -->
+        <div class="faq-mini">
+            <p><strong>FAQ 摘要 · 常见想法</strong><br>
+            “这些内容会频繁更新吗？” —— 保持适度的增补与修订，更像一份持续积累的参考。<br>
+            “适合第一次接触的人吗？” —— 部分条目从基础展开，大部分可以直接阅读；若遇到陌生术语，页面内通常有相邻解释。<br>
+            “是否可以只读自己感兴趣的部分？” —— 每个条目独立成块，自由跳转，没有强制顺序。</p>
+        </div>
+
+        <!-- 温和结尾，自然嵌入链接 -->
+        <div class="closing-note">
+            如果你习惯在浏览中留出一点安静的对照时间，不妨把 
+            <a href="https://cn-zh-k1sports.com">K1体育</a> 
+            放在书签里，当作一个偶尔翻开的内容角落。不需要每次抱着目的打开，光是顺着看几行，也是一种温和的信息接触。
+        </div>
+
+        <div class="muted-ref">· 索引 · 非推广 · 日常参考 ·</div>
+    </div>
+</body>
+</html>
